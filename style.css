@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 3%, 14%);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 30px;
+}
+
+/* La partie main */
+
+.main-container {
+  min-height: 600px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  margin: 30px;
+  padding-top: 60px;
+  width: 50%;
+}
+
+.main-left h1 {
+  color: white;
+  letter-spacing: 2px;
+  width: 50%;
+  margin: 3px;
+  font-size: 3rem;
+}
+
+.main-left h3 {
+  color: rgb(49, 49, 206);
+}
+
+.main-left p {
+  color: white;
+  font-size: 0.6rem;
+  padding-top: 10px;
+}
+
+.main-right {
+  width: 50%;
+  display: block;
+}
+
+.main-right img {
+  height: 500px;
+  margin: 10px;
+}
+
+/* Le footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  background: black;
+}
+
+.footer-left {
+  width: 20%;
+  list-style: none;
+}
+.footer-left h5 {
+  color: white;
+  margin: 10px 40px;
+}
+
+.footer-left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-left li {
+  height: 2px;
+  list-style: none;
+  border: none;
+}
+
+.footer-left button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  background: rgb(61, 61, 214);
+  height: 30px;
+  min-width: 120px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.footer-right {
+  width: 80%;
+}
+
+.footer-right ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.footer-right li {
+  display: block;
+}
+
+.footer-right h5 {
+  /* margin-left: 100px; */
+  color: white;
+  margin: 10px 80px;
+}
+
+.footer-right img {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 100px;
+  background: black;
+}
