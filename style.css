@@ -1,162 +1,176 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: hsl(0, 3%, 14%);
-  min-height: 100vh;
   font-family: "Inter", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-}
-
-.logo {
-  font-size: 1.6rem;
-  color: white;
-  margin-top: 20px;
-}
-
-nav {
-  display: flex;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 li {
   list-style: none;
-  display: flex;
-  align-items: center;
-  color: white;
-  margin: 30px;
 }
 
-/* La partie main */
+p {
+  font-size: 0.8rem;
+}
 
-.main-container {
-  min-height: 600px;
-  width: 100vw;
+body {
+  min-height: 100vh;
+  background: rgb(44, 43, 43);
+  color: white;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.main-left {
-  margin: 30px;
-  padding-top: 60px;
+nav ul {
+  display: flex;
   width: 50%;
+  justify-content: space-between;
 }
-
-.main-left h1 {
-  color: white;
-  letter-spacing: 2px;
-  width: 50%;
-  margin: 3px;
-  font-size: 3rem;
-}
-
-.main-left h3 {
-  color: rgb(49, 49, 206);
-}
-
-.main-left p {
-  color: white;
-  font-size: 0.6rem;
-  padding-top: 10px;
-}
-
-.main-right {
-  width: 50%;
-  display: block;
-}
-
-.main-right img {
-  height: 500px;
-  margin: 10px;
-}
-
-/* Le footer */
-
-.footer-container {
+header {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.header-left-container h3 {
+  color: #474dff;
+  font-size: 1.3rem;
+}
+
+header-right {
+  width: 50%;
+}
+
+#modem {
   width: 100%;
-  background: black;
 }
 
-.footer-left {
-  width: 20%;
-  list-style: none;
-}
-.footer-left h5 {
-  color: white;
-  margin: 10px 40px;
+.infos {
+  display: flex;
+  background: rgb(10, 10, 10);
+  border-radius: 10px;
 }
 
-.footer-left ul {
+.infos-left {
+  width: 33%;
+}
+
+.btn-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
 }
 
-.footer-left li {
-  height: 2px;
-  list-style: none;
+button {
   border: none;
+  background: #474dff;
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
 }
 
-.footer-left button {
+.infos-right {
+  width: 67%;
+}
+
+.investors {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: white;
-  background: rgb(61, 61, 214);
-  height: 30px;
-  min-width: 120px;
   align-items: center;
-  border-radius: 5px;
-  padding: 2px;
+  justify-content: center;
+  height: 80%;
 }
 
-.footer-right {
-  width: 80%;
-}
-
-.footer-right ul {
+.img-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 10px;
-  list-style: none;
-}
-
-.footer-right li {
-  display: block;
-}
-
-.footer-right h5 {
-  /* margin-left: 100px; */
-  color: white;
-  margin: 10px 80px;
-}
-
-.footer-right img {
-  height: 40px;
-  display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  margin-left: 100px;
-  background: black;
+  width: 100%;
+}
+
+.img-container img {
+  height: 60px;
+}
+
+/* ***************MEDIA QUERIES********* */
+@media screen and (max-width: 830px) {
+  header {
+    display: block;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header {
+    display: block;
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .infos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .infos-left h3 {
+    text-align: center;
+  }
+  .infos-left {
+    width: 90%;
+    align-items: center;
+  }
+  .btn-container {
+    display: grid;
+    grid-auto-columns: auto;
+  }
+  .infos-right {
+    display: grid;
+    grid-template-columns: 90%;
+  }
+  .infos-right h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infos {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .infos-right {
+    display: block;
+    align-items: center;
+  }
+
+  .infos-right h3 {
+    text-align: center;
+  }
+  .img-container {
+    display: block;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+  }
 }
