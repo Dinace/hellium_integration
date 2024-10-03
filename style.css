@@ -129,6 +129,7 @@ button {
   header h1 {
     font-size: 3rem;
     text-align: center;
+    align-items: center;
   }
   .infos {
     display: grid;
@@ -178,5 +179,25 @@ button {
       "i1"
       "i2"
       "i3";
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* */
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "i3";
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
